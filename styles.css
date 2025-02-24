@@ -1,0 +1,346 @@
+:root{
+--font-size: 17px;
+--font-family:montserrat;
+--background:rgb(63, 181, 120);
+}
+body{
+    font-family: var(--font-family);
+}
+.bg-red {
+    background-color: var(--background);
+}
+
+.logo {
+    width: 100px; /*Logo Size Here*/
+}
+
+.search-form {
+    flex-grow: 1;
+    max-width: 600px; 
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--background);
+}
+
+.input-group .custom-select, 
+.input-group .form-control {
+    border-right: 0; 
+}
+
+.input-group .form-control {
+    border-left: 0; /* Remove border from left side to merge with select */
+}
+
+.input-group-append .btn {
+    border-left: 0; 
+}
+
+/* Custom CSS for Part 2 */
+.list-group-item-action {
+    color: black;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    background-color: var(--background);
+    color: white;
+}
+
+.carousel-inner img {
+    height: 300px; 
+    object-fit: cover;
+}
+
+.contact-info {
+    border-radius: 5px;
+    background-color: var(--background);
+}
+
+.contact-info h5 {
+    margin-bottom: 10px;
+}
+
+.notice{
+    background-color: var(--background);
+}
+.menu {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.menu .nav-link {
+    color: #333;
+}
+.menu .nav-link:hover {
+    color: #007bff;
+}
+.contact-info {
+    background-color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+.contact-info p {
+    margin: 0;
+}
+
+
+
+.form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner img {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.1); 
+}
+
+.ad-section {
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--background);
+}
+
+.ad-section h5 {
+    margin-bottom: 10px;
+}
+
+
+/* Custom CSS for Part 4 */
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+
+/* Custom CSS for Part 5 */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+
+/* Custom CSS for Part 6 */
+.footer-logo {
+    width: 150px; /* Adjust the size as needed */
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.bg-dark {
+    background-color: #333; /* Dark background color for the copyright section */
+}
+
+
+/* Custom CSS for Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background);
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Center icon vertically */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it is above other content */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: darkred;
+}
+
+.scroll-to-top i {
+    vertical-align: middle;
+}
+
+/* Show button when scrolling down */
+.show {
+    display: block;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.menu {
+    width: 100%;
+}
+
+.contact-info {
+    margin-left: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    background: none;
+    color: #000;
+}
+.carousel-control-prev {
+    right: 5rem;
+}
+.carousel-control-next {
+    right: 1rem;
+}
